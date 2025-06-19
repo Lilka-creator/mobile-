@@ -1,0 +1,255 @@
+/* Podstawowy mobile-first styl */
+
+.main-wrapper {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-wrapped {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* na mobile menu lewo-prawo */
+  width: 100%;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.frame {
+  position: relative; /* usuwam absolute na mobile */
+  box-shadow: none;
+  border-radius: 8px;
+  background-color: #000;
+  width: 100%;
+  max-width: 150px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  color: #fff;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.zaloguj {
+  width: 100%;
+  max-width: 150px;
+  font-weight: 500;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zaloguj:hover {
+  color: #a01f80;
+}
+
+.na-tgrze-2,
+.na-tgrze-3 {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  background-color: white;
+  box-sizing: border-box;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  font-size: 18px;
+  z-index: 1000;
+}
+
+.na-tgrze-3 {
+  top: 70px;
+  background-color: rgb(216, 192, 230);
+  height: 60px;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo-1-icon {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.items1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 0 auto;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  white-space: normal;
+}
+
+.items1 a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.items1 a:hover {
+  color: #a01f80;
+}
+
+.customer-quote,
+.customer-quote1,
+.customer-quote2 {
+  position: relative; /* usunięcie absolute */
+  width: 90%;
+  max-width: 350px;
+  margin: 20px auto;
+  border-radius: 12px;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: auto;
+}
+
+.to {
+  position: relative;
+  background-color: rgba(216, 192, 230, 0.31);
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+}
+
+.inni-ju-wyprbowali {
+  position: relative;
+  font-size: 28px;
+  font-weight: 600;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto 20px;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.button,
+.button1,
+.button2,
+.button3 {
+  position: relative;
+  width: 90%;
+  max-width: 300px;
+  height: 60px;
+  background-color: #000;
+  border-radius: 8px;
+  box-shadow: none;
+  margin: 15px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.button:hover,
+.button1:hover,
+.button2:hover,
+.button3:hover {
+  color: #a01f80;
+}
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px 0;
+  object-fit: cover;
+}
+
+/* Stopka */
+
+.stopka {
+  position: relative;
+  width: 100%;
+  background-color: #e5a0d1;
+  padding: 20px 16px;
+  box-sizing: border-box;
+  height: auto;
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+}
+
+/* Ukryj lub dostosuj elementy które mają pozycjonowanie absolute z konkretnymi wartościami */
+
+.logo-1-icon,
+.items,
+.image-icon,
+.bakery-4937230-2-icon,
+.bakery-4937230-1,
+.woman-1886775-1-icon,
+.motorybike-12869881-1,
+.delivery-6707452-1-icon,
+.card,
+.card1,
+.card2 {
+  position: relative !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 100% !important;
+  max-width: 350px !important;
+  height: auto !important;
+  margin: 10px auto;
+}
+
+/* Responsive breakpoint for slightly bigger mobile/tablets */
+
+@media (min-width: 481px) {
+  .main-wrapper {
+    padding: 0 24px;
+  }
+  
+  .zaloguj {
+    font-size: 20px;
+  }
+  
+  .items1 {
+    font-size: 18px;
+  }
+  
+  .customer-quote,
+  .customer-quote1,
+  .customer-quote2 {
+    max-width: 400px;
+  }
+  
+  .button {
+    max-width: 350px;
+    height: 70px;
+    font-size: 20px;
+  }
+}
